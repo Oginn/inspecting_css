@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head">
+  <title>Css Inspecting</title>
+</head>
+
+<body>
+  <header>
+    <h1>CSS INSPECTION</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>This is an Inspection Webpage for Preview</h2>
+    <p>Take me to Css Part</p>
+    <button onclick="addCSS()" id="button">Added CSS</button>
+
+  </main>
+  <footer>
+    <p>Copyright © <!--Alter. &copy;-->
+Omatology</p>
+  </footer>
+  <script>
+    let counter = 0
+    function addCSS() {
+      counter++
+      if (counter % 2 !== 0) {
+        document.getElementById("head").innerHTML = '  <title>Example HTML Website</title> \n<link rel="stylesheet" href="./styles.css" />'
+      } else {
+
+        document.getElementById("head").innerHTML = '  <title>Example HTML Website</title> '
+
+      }
+    }
+  </script>
+</body>
+
+</html>
